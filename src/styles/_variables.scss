@@ -1,0 +1,21 @@
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap');
+
+$barlow: 'Barlow', sans-serif;
+$playfair: 'Playfair Display', serif;
+
+//Colors
+$primary: #42cd66;
+$secondary: #ff5001;
+$darkBlue: #01224f;
+$greyText: #6e85aa;
+$w: #fff;
+$b: #000;
+
+// Viewport size
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
