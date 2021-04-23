@@ -1,0 +1,41 @@
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: $xl;
+  margin: 0 auto;
+}
+
+.wrapper-title {
+  font-family: $barlow;
+  text-align: center;
+  margin: 20px;
+}
+
+// ------------ Buttons -----------
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  margin-top: 10px;
+  .btn {
+    margin: 0 10px;
+  }
+}
+
+// ------------ Category card-----------
+
+.category-cards {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: $md) {
+  .category-cards {
+    width: 98%;
+    justify-content: center;
+  }
+}
