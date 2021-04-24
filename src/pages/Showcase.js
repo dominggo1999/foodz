@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 import CategoryCard from '../components/CategoryCard';
+import Footer from '../components/Footer';
 import categories from '../data/categories';
 
 const Showcase = () => {
@@ -15,7 +16,7 @@ const Showcase = () => {
         </div>
       </div>
 
-      <div className="sections-wrapper">
+      <div className="section-wrapper">
         <h3 className="wrapper-title">Category Card</h3>
         <div className="category-cards">
           {
@@ -28,6 +29,9 @@ const Showcase = () => {
           }
         </div>
       </div>
+
+      <Footer />
+
     </div>
   );
 };

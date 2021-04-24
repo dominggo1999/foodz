@@ -1,9 +1,11 @@
-@import './reset';
 @import './variables';
+@import './reset';
 
 // Layout
+@import './layout/container';
 @import './layout/button';
 @import './layout/category-card';
+@import './layout/footer';
 
 // Pages
 @import './pages/showcase';
