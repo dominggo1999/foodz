@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import testReducer from './test/testReducer';
+import navbarReducer from './test/navbarReducer';
 
 export default combineReducers({
-  test: testReducer,
+  navbar: navbarReducer,
 });

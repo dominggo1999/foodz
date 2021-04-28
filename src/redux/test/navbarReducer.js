@@ -1,16 +1,16 @@
-import { testActionTypes } from './testActionTypes';
+import { navbarActionTypes } from './navbarActionTypes';
 
-const { SET_CURRENT_STATUS } = testActionTypes;
+const { TOGGLE_NAVBAR } = navbarActionTypes;
 
 const INITIAL_STATE = {
-  currentStatus: false,
+  displayNavbarMobile: false,
 };
 
 const testReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case SET_CURRENT_STATUS:
+    case TOGGLE_NAVBAR:
       return {
-        currentStatus: true,
+        displayNavbarMobile: !state,
       };
     default:
       return state;

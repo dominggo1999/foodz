@@ -1,12 +1,17 @@
 @import './variables';
 @import './reset';
 
+// Animation
+@import './animations';
+
 // Layout
 @import './layout/container';
 @import './layout/button';
 @import './layout/category-card';
 @import './layout/footer';
 @import './layout/hero';
+@import './layout/navbar';
 
 // Pages
 @import './pages/showcase';
+@import './pages/home';
