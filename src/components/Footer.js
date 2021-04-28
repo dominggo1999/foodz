@@ -29,36 +29,42 @@ const Footer = () => {
           <NavLink
             to="/"
             activeClassName="link-selected"
+            exact
           >
             Home
           </NavLink>
           <NavLink
             to="/about"
             activeClassName="link-selected"
+            exact
           >
             About
           </NavLink>
           <NavLink
             to="/menu"
             activeClassName="link-selected"
+            exact
           >
             Menu
           </NavLink>
           <NavLink
             to="/gallery"
             activeClassName="link-selected"
+            exact
           >
             Gallery
           </NavLink>
           <NavLink
             to="/blog"
             activeClassName="link-selected"
+            exact
           >
             Blog
           </NavLink>
           <NavLink
             to="/contact"
             activeClassName="link-selected"
+            exact
           >
             Contact
           </NavLink>

@@ -1,8 +1,8 @@
 import React from 'react';
-import Button from './Button';
 import MainHero from './MainHero';
+import StandardHero from './StandardHero';
 
-const Hero = ({ type }) => {
+const HeroContainer = ({ type, route }) => {
   return (
     <div className="hero">
       <div className="circle-background" />
@@ -10,11 +10,11 @@ const Hero = ({ type }) => {
         {
           type === 'main'
             ? <MainHero />
-            : <p>Under construction</p>
+            : <StandardHero route={route} />
         }
       </div>
     </div>
   );
 };
 
-export default Hero;
+export default HeroContainer;
