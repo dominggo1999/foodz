@@ -10,7 +10,7 @@ const testReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case TOGGLE_NAVBAR:
       return {
-        displayNavbarMobile: !state,
+        displayNavbarMobile: !state.displayNavbarMobile,
       };
     default:
       return state;

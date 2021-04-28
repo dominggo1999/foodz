@@ -6,6 +6,6 @@ const { TOGGLE_NAVBAR } = navbarActionTypes;
 
 // Eksport masing2 action
 
-export const setCurrentStatus = () => ({
+export const toggleNavbar = () => ({
   type: TOGGLE_NAVBAR,
 });

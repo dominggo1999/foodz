@@ -1,28 +1,33 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { AiOutlineSearch, AiOutlineMenu } from 'react-icons/ai';
+import { connect } from 'react-redux';
+import { toggleNavbar } from '../redux/navbar/navbarActions';
 
 import Button from './Button';
 
-const Navbar = () => {
+const Navbar = ({ displayNavbarMobile, toggleNavbar }) => {
   return (
     <nav>
       <div className="container">
         <div className="nav-brand">
           <Link
             to="/"
-            exact
           >
             Foodz
           </Link>
         </div>
 
-        <div className="nav-menu-icon">
+        <div
+          className="nav-menu-icon"
+          role="button"
+          onClick={toggleNavbar}
+        >
           <AiOutlineMenu />
         </div>
 
         {/* Width screen size navbar */}
-        <div className="nav-menu nav-menu-large">
+        <div className={`nav-menu nav-menu-large ${displayNavbarMobile ? 'nav-menu-mobile' : ''}`}>
           <NavLink
             to="/"
             activeClassName="link-selected"
@@ -66,11 +71,17 @@ const Navbar = () => {
             Contact
           </NavLink>
 
-          <div className="search-button">
+          <div
+            className="search-button"
+
+          >
             <AiOutlineSearch />
           </div>
           <div className="nav-button">
-            <Button type="orange">Order Now</Button>
+            <Button
+              type="orange"
+            >Order Now
+            </Button>
           </div>
         </div>
       </div>
@@ -78,4 +89,12 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+const mapStateToProps = (state) => ({
+  displayNavbarMobile: state.navbar.displayNavbarMobile,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  toggleNavbar: () => dispatch(toggleNavbar()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);

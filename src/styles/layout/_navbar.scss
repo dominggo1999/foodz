@@ -3,6 +3,7 @@ nav {
   z-index: 4000;
   width: 100%;
   margin: 30px 0;
+  user-select: none;
 }
 
 nav .container {
@@ -17,6 +18,8 @@ nav .container {
     font-size: 30px;
     font-weight: 600;
     cursor: pointer;
+    position: relative;
+    z-index: 3900;
   }
 
   .nav-menu-icon {
@@ -71,23 +74,54 @@ nav .container {
 // Mobile responsive
 
 @media screen and (max-width: $md) {
-  nav .container {
-    .nav-menu.nav-menu-large {
-      display: none;
-    }
+  nav {
+    .container {
+      .nav-menu.nav-menu-large {
+        display: none;
+      }
 
-    .nav-menu-icon {
-      background: $w;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $darkBlue;
-      font-size: 20px;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      cursor: pointer;
+      .nav-menu-icon {
+        background: $w;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $darkBlue;
+        font-size: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: relative;
+        z-index: 3900;
+      }
+
+      .nav-menu.nav-menu-mobile {
+        background: $primary;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        top: -50px;
+        left: 0;
+        padding: 100px 20px 80px;
+
+        a {
+          padding: 10px;
+          font-size: 20px;
+        }
+
+        .search-button {
+          background: $w;
+          margin: 0 auto 20px;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
     }
   }
 }
