@@ -239,12 +239,18 @@
   }
 }
 
-// Kasih margin hero
+// Kasih padding hero
 @media screen and (max-width: $lg) {
   .hero {
-    min-height: 700px;
     .container {
       margin-top: 70px;
     }
+  }
+}
+
+// Fix main hero bugs
+@media screen and (max-width: $md) {
+  .hero {
+    min-height: 800px;
   }
 }
