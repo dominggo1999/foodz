@@ -7,7 +7,7 @@ const MainHero = () => {
       <div className="main-left">
 
         <img
-          src="https://res.cloudinary.com/dv8aesvfs/image/upload/v1619429006/hero-1_mullcc.png"
+          src="https://res.cloudinary.com/dv8aesvfs/image/upload/v1619762018/hero-1_mullcc_apwnq9.png"
           alt="Hero"
           className="hero-image"
         />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { AiOutlineSearch, AiOutlineMenu } from 'react-icons/ai';
+import { IoMdClose } from 'react-icons/io';
 import { connect } from 'react-redux';
 import { toggleNavbar } from '../redux/navbar/navbarActions';
 
@@ -23,7 +24,10 @@ const Navbar = ({ displayNavbarMobile, toggleNavbar }) => {
           role="button"
           onClick={toggleNavbar}
         >
-          <AiOutlineMenu />
+          {
+            displayNavbarMobile ? <IoMdClose /> : <AiOutlineMenu />
+          }
+
         </div>
 
         {/* Width screen size navbar */}
