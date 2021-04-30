@@ -31,8 +31,16 @@
   line-height: 2;
 }
 
-// Responsive
+.quote {
+  font-family: $barlow;
+  font-style: italic;
+  color: $darkBlue;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+}
 
+// Responsive
 @media screen and (max-width: $md) {
   .section-title-1 {
     font-size: 18px;

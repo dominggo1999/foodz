@@ -3,6 +3,7 @@ import HeroContainer from '../components/HeroContainer';
 import CategoryCard from '../components/CategoryCard';
 import AboutUs from '../components/AboutUs';
 import Reservation from '../components/Reservation';
+import Testimonials from '../components/Testimonials';
 import categories from '../data/categories';
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
         </div>
       </div>
       <AboutUs />
+      <Testimonials />
       <Reservation />
     </>
   );
