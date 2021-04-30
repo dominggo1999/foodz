@@ -1,0 +1,118 @@
+.about-us {
+  padding: 40px 0 100px;
+  overflow: hidden;
+}
+
+.about-us .container {
+  display: flex;
+
+  .about-us-left,
+  .about-us-right {
+    width: 50%;
+  }
+
+  .about-us-left {
+    display: flex;
+    flex-direction: column;
+
+    .section-text {
+      margin-bottom: 30px;
+    }
+
+    .section-title-2 {
+      width: 60%;
+    }
+
+    svg {
+      width: 70px;
+      height: 70px;
+      fill: $primary;
+      margin-bottom: 10px;
+    }
+    .about-us-cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .about-us-card {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: $barlow;
+        font-weight: 600;
+        color: $darkBlue;
+        background: $w;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .about-us-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .about-us-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-height: 620px;
+      position: relative;
+
+      img {
+        width: 90%;
+        position: relative;
+        z-index: 3900;
+      }
+
+      // Orange circle
+      $diameter: 75%;
+
+      &::before {
+        content: '';
+        background: $secondary;
+        position: absolute;
+        width: $diameter;
+        height: $diameter;
+        z-index: 3800;
+        right: -15%;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// Responsive
+@media screen and (max-width: $md) {
+  .about-us .container {
+    .about-us-left,
+    .about-us-right {
+      width: 100%;
+      padding: 20px 0;
+    }
+
+    .about-us-left {
+      order: 2;
+
+      .section-title-2 {
+        width: 100%;
+      }
+    }
+
+    .about-us-right {
+      overflow: hidden;
+
+      .about-us-image-container {
+        width: 70%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

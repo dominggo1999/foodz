@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroContainer from '../components/HeroContainer';
 import CategoryCard from '../components/CategoryCard';
+import AboutUs from '../components/AboutUs';
 import categories from '../data/categories';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
           }
         </div>
       </div>
+      <AboutUs />
     </>
   );
 };

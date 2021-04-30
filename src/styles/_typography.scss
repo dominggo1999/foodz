@@ -1,0 +1,42 @@
+.section-title-1,
+.section-title-2 {
+  font-family: $playfair;
+}
+
+.section-title-1 {
+  color: $primary;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.section-title-2 {
+  font-size: 50px;
+  color: $darkBlue;
+  margin-bottom: 15px;
+}
+
+.section-text {
+  font-family: $barlow;
+  color: $darkBlue;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 15px;
+  position: relative;
+  line-height: 2;
+}
+
+// Responsive
+
+@media screen and (max-width: $md) {
+  .section-title-1 {
+    font-size: 18px;
+  }
+
+  .section-title-2 {
+    font-size: 36px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+}
