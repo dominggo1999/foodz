@@ -5,8 +5,6 @@ const StandardHero = ({ route }) => {
   // Get data and image link
   const data = hero.filter((item) => item.route === route)[0];
 
-  console.log(data.image);
-
   return (
     <>
       {data && (
