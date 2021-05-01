@@ -1,17 +1,9 @@
 import React from 'react';
 import { ImQuotesLeft } from 'react-icons/im';
-import { AiFillStar, AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import PrinStars from './PrintStars';
 
 const Testimonials = () => {
-  const printStars = () => {
-    const stars = [];
-    for (let i = 0; i < 5; i += 1) {
-      stars.push(<AiFillStar key={i} />);
-    }
-
-    return stars;
-  };
-
   return (
     <div className="testimonials">
       <div className="container">
@@ -35,8 +27,8 @@ const Testimonials = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quibusdam soluta omnis officia quis animi suscipit delectus fugiat maxime vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, esse!
               &quot;
             </div>
-            <div className="testimonials-stars">
-              {printStars()}
+            <div className="testimonials-stars stars">
+              <PrinStars />
             </div>
             <div className="testimonials-said-by">
               <span className="testimonials-name">Alina Parker, </span>

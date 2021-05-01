@@ -4,6 +4,7 @@ import CategoryCard from '../components/CategoryCard';
 import AboutUs from '../components/AboutUs';
 import Reservation from '../components/Reservation';
 import Testimonials from '../components/Testimonials';
+import PopularItems from '../components/PopularItems';
 import categories from '../data/categories';
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
         </div>
       </div>
       <AboutUs />
+      <PopularItems />
       <Testimonials />
       <Reservation />
     </>
