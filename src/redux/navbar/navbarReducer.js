@@ -6,7 +6,7 @@ const INITIAL_STATE = {
   displayNavbarMobile: false,
 };
 
-const testReducer = (state = INITIAL_STATE, action) => {
+const navbarReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case TOGGLE_NAVBAR:
       return {
@@ -17,4 +17,4 @@ const testReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export default testReducer;
+export default navbarReducer;
