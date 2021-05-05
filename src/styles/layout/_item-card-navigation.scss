@@ -1,0 +1,20 @@
+// Hanya untuk popular items
+.items-navigation {
+  width: 15%;
+  font-family: $barlow;
+  font-weight: 500;
+  color: $darkBlue;
+  font-size: 17px;
+
+  li {
+    cursor: pointer;
+    padding: 12px 20px;
+    border-left: 2px solid lighten($darkGrey, 25%);
+  }
+
+  // Just showcase the styling of active nav
+  li:nth-of-type(1) {
+    color: $secondary;
+    border-color: $secondary;
+  }
+}

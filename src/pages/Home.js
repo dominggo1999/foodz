@@ -5,6 +5,7 @@ import AboutUs from '../components/AboutUs';
 import Reservation from '../components/Reservation';
 import Testimonials from '../components/Testimonials';
 import PopularItems from '../components/PopularItems';
+import FeaturedMenu from '../components/FeaturedMenu';
 import categories from '../data/categories';
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
       </div>
       <AboutUs />
       <PopularItems />
+      <FeaturedMenu />
       <Testimonials />
       <Reservation />
     </>

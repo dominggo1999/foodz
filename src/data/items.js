@@ -20,6 +20,27 @@ const items = [
     price: 30,
     image: 'https://images.pexels.com/photos/3228803/pexels-photo-3228803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   },
+  {
+    id: 'item-4',
+    name: 'eggs chopies',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores totam eius animi eveniet!',
+    price: 30,
+    image: 'https://images.pexels.com/photos/3228803/pexels-photo-3228803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
+  {
+    id: 'item-5',
+    name: 'eggs chopies',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores totam eius animi eveniet!',
+    price: 30,
+    image: 'https://images.pexels.com/photos/3228803/pexels-photo-3228803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
+  {
+    id: 'item-6',
+    name: 'eggs chopies',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores totam eius animi eveniet!',
+    price: 30,
+    image: 'https://images.pexels.com/photos/3228803/pexels-photo-3228803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
 ];
 
 export default items;
