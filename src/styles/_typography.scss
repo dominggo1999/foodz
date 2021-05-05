@@ -61,6 +61,13 @@
   line-height: 1.5;
 }
 
+.item-order-now,
+.item-order-now a {
+  font-family: $barlow;
+  color: $secondary;
+  font-weight: 500;
+}
+
 .stars {
   svg {
     fill: $y;

@@ -1,0 +1,17 @@
+.all-items {
+  padding: 50px 0;
+  width: 100%;
+
+  .all-items-wrapper {
+    .all-items-menu {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .all-items-button {
+      text-align: center;
+    }
+  }
+}
