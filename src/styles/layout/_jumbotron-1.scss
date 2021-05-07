@@ -1,0 +1,47 @@
+.jumbotron-1 {
+  padding-bottom: 50px;
+
+  .section-title-2 {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .jumbotron-1-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .jumbotron-item {
+      margin: 20px;
+      text-align: center;
+      svg {
+        width: 100px;
+        height: 100px;
+        fill: $primary;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .jumbotron-1 {
+    .section-title-2 {
+      width: 100%;
+    }
+
+    .jumbotron-1-wrapper {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      .jumbotron-item {
+        svg {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}

@@ -109,6 +109,12 @@
             margin-right: 10px;
           }
         }
+
+        button:hover {
+          svg {
+            fill: $secondary;
+          }
+        }
       }
     }
   }

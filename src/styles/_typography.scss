@@ -74,6 +74,14 @@
   }
 }
 
+.jumbotron-item-text {
+  font-family: $barlow;
+  color: $darkBlue;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
 // Responsive
 @media screen and (max-width: $md) {
   .section-title-1 {
