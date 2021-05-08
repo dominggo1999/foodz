@@ -1,0 +1,52 @@
+.our-team {
+  padding: 30px 0;
+}
+
+.our-team .container {
+  .our-team-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .chef-card {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+      }
+
+      .section-text {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .our-team .container .our-team-wrapper {
+    .chef-card {
+      width: 48%;
+    }
+  }
+}
+@media screen and (max-width: $sm) {
+  .our-team .container .our-team-wrapper {
+    .chef-card {
+      width: 100%;
+
+      img {
+        width: 80%;
+        height: 270px;
+      }
+    }
+  }
+}

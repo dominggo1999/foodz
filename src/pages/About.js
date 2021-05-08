@@ -4,6 +4,7 @@ import Reservation from '../components/Reservation';
 import Testimonials from '../components/Testimonials';
 import Jumbotron1 from '../components/Jumbotron1';
 import Jumbotron2 from '../components/Jumbotron2';
+import OurTeam from '../components/OurTeam';
 
 const About = () => {
   return (
@@ -11,6 +12,7 @@ const About = () => {
       <HeroContainer route="about" />
       <Jumbotron1 />
       <Jumbotron2 />
+      <OurTeam />
       <Testimonials />
       <Reservation />
     </>
