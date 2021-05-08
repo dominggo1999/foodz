@@ -1,0 +1,41 @@
+.our-awards {
+  padding: 30px 0;
+}
+
+.our-awards .container {
+  .our-awards-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .our-awards-card {
+      width: 19%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 90%;
+        height: 100px;
+        fill: $awards;
+        &:hover {
+          fill: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .our-awards .container .our-awards-wrapper {
+    .our-awards-card {
+      width: 20%;
+
+      svg {
+        padding: 0 10px;
+      }
+    }
+  }
+}
