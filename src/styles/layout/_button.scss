@@ -3,7 +3,7 @@
   font-family: $barlow;
   padding: 8px 20px;
   background: none;
-  border: 1px $darkGrey solid;
+  border: 2px $darkGrey solid;
   font-size: 18px;
   outline: none;
   color: $b;
@@ -20,13 +20,13 @@
 .btn-orange {
   background-color: $secondary;
   color: $w;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .btn-green {
   background-color: $primary;
   color: $w;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 // Media query
