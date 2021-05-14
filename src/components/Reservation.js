@@ -11,16 +11,15 @@ const Reservation = () => {
           <h4 className="section-title-1">Book Now</h4>
           <h2 className="section-title-2">Reserve A Tabel</h2>
         </div>
-        <div className="reservation-form">
+        <div className="form-container">
           <form>
-            <div className="reservation-input-fields">
+            <div className="input-fields">
               <input
                 type="text"
                 placeholder="Name"
                 required
               />
               <input
-                type="text"
                 placeholder="Email"
                 type="email"
                 required

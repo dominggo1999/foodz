@@ -1,0 +1,59 @@
+.form-container {
+  width: 100%;
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form .input-fields {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    input,
+    textarea {
+      font-family: $barlow;
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      color: $darkBlue;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      padding: 16px 10px;
+      border: none;
+      display: inline-block;
+    }
+
+    textarea {
+      width: 100%;
+      min-width: 100%;
+    }
+
+    input {
+      width: 30%;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 2px solid $primary;
+    }
+  }
+
+  form .reservation-input-button {
+    text-align: center;
+
+    button {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .form-container form .input-fields {
+    input {
+      width: 48%;
+    }
+  }
+}

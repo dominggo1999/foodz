@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroContainer from '../components/HeroContainer';
 import Jumbotron4 from '../components/Jumbotron4';
+import ContactUs from '../components/ContactUs';
 
 const Contact = () => {
   return (
@@ -14,6 +15,7 @@ const Contact = () => {
         title="Location"
       >
       </iframe>
+      <ContactUs />
     </>
   );
 };
